@@ -13,6 +13,10 @@
 		9910A63E2842B434006F024A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9910A63C2842B434006F024A /* Main.storyboard */; };
 		9910A6402842B435006F024A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9910A63F2842B435006F024A /* Assets.xcassets */; };
 		9910A6432842B435006F024A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9910A6412842B435006F024A /* LaunchScreen.storyboard */; };
+		9910A64B2847ED6D006F024A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9910A64A2847ED6D006F024A /* TableViewController.swift */; };
+		9910A64E2847F15D006F024A /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9910A64D2847F15D006F024A /* WebKit.framework */; };
+		9910A6502847F16F006F024A /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9910A64F2847F16F006F024A /* Network.framework */; };
+		9910A6522847F255006F024A /* InternetStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9910A6512847F254006F024A /* InternetStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		9910A63F2842B435006F024A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9910A6422842B435006F024A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9910A6442842B435006F024A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9910A64A2847ED6D006F024A /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9910A64D2847F15D006F024A /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9910A64F2847F16F006F024A /* Network.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Network.framework; path = System/Library/Frameworks/Network.framework; sourceTree = SDKROOT; };
+		9910A6512847F254006F024A /* InternetStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9910A64E2847F15D006F024A /* WebKit.framework in Frameworks */,
+				9910A6502847F16F006F024A /* Network.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,7 @@
 			children = (
 				9910A6352842B434006F024A /* ConsultaArchivos */,
 				9910A6342842B434006F024A /* Products */,
+				9910A64C2847F15D006F024A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,19 @@
 				9910A63F2842B435006F024A /* Assets.xcassets */,
 				9910A6412842B435006F024A /* LaunchScreen.storyboard */,
 				9910A6442842B435006F024A /* Info.plist */,
+				9910A64A2847ED6D006F024A /* TableViewController.swift */,
+				9910A6512847F254006F024A /* InternetStatus.swift */,
 			);
 			path = ConsultaArchivos;
+			sourceTree = "<group>";
+		};
+		9910A64C2847F15D006F024A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9910A64F2847F16F006F024A /* Network.framework */,
+				9910A64D2847F15D006F024A /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +163,8 @@
 				9910A63B2842B434006F024A /* ViewController.swift in Sources */,
 				9910A6372842B434006F024A /* AppDelegate.swift in Sources */,
 				9910A6392842B434006F024A /* SceneDelegate.swift in Sources */,
+				9910A64B2847ED6D006F024A /* TableViewController.swift in Sources */,
+				9910A6522847F255006F024A /* InternetStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +327,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,7 +354,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
